@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>
+        Сторінка всих постів
+    </h1>
+    {% if is_granted('ROLE_ADMIN') %}
+        <a href="#">Delete</a>
+    {% endif %}
+    <a href="#">Save</a>
+
+
+{% endblock %}

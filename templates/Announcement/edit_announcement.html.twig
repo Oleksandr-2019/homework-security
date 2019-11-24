@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h2>
+        Ваша електронна пошта
+    </h2>
+    <span>{{ yourEmail }}</span>
+
+    <h1>
+        Сторінка редагування посту
+    </h1>
+
+    <div>
+
+        {{ form(formEditAnnouncement) }}
+
+    </div>
+
+{% endblock %}
